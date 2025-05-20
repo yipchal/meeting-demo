@@ -52,6 +52,10 @@ def summarize_text(content, mode="formal"):
         return "总结失败，请稍后再试。"
 
 
+@app.route('/')
+def home():
+    return "Hello from Flask backend!"
+
 @app.route("/summarize", methods=["POST"])
 def summarize():
     try:
