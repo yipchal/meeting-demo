@@ -56,7 +56,7 @@ export default {
       const mode = this.selectedMode === 1 ? 'funny' : 'formal'
 
       uni.request({
-        url: 'http://localhost:5000/summarize', // 改为你的后端地址
+        url: 'https://meeting-demo-au6n.onrender.com/summarize', // 改为你的后端地址
         method: 'POST',
         data: {
           text: this.inputText,
